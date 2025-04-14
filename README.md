@@ -81,6 +81,16 @@ This project develops an AI-powered mental health chatbot using OpenAI's API and
 
 5. Access the chatbot in your browser and start a conversation!
 
+## **Data Files**
+
+The `data` folder contains the following files:
+
+1. **`train.jsonl`**: This file stores the training dataset in JSONL format, which is used to fine-tune the chatbot model. Each line in the file represents a JSON object containing structured data for training.
+
+2. **`validation.jsonl`**: This file contains the validation dataset in JSONL format, used to evaluate the chatbot model's performance during fine-tuning. Each line represents a JSON object for validation.
+
+> **Note**: These files are excluded from version control using `.gitignore` to ensure sensitive or large data is not committed to the repository.
+
 Here's a clean, **consolidated version** of your CalmMindBot README that combines clarity, structure, and professionalism, while staying concise and impactful:
 
 ---

@@ -1,7 +1,6 @@
 # Calm Mind Chat Bot
 
 A Django-based mental health counseling chatbot powered by OpenAI.
-For your **CalmMindBot** GitHub repository, here's a well-structured description that outlines its purpose and key features:
 
 ---
 
@@ -10,6 +9,10 @@ For your **CalmMindBot** GitHub repository, here's a well-structured description
 **A Django-based mental health counseling chatbot powered by OpenAI.**
 
 CalmMindBot is an AI-driven chatbot designed to provide mental health support and counseling. Built with **Django**, **Python**, **HTML/CSS**, and **JavaScript**, it integrates the **OpenAI API** to deliver meaningful conversations, helpful insights, and empathetic responses to users seeking guidance on emotional well-being.
+
+## **Project Description**
+
+This project develops an AI-powered mental health chatbot using OpenAI's API and Django. The chatbot provides empathetic, real-time support through meaningful conversations, addressing diverse mental health concerns. It combines advanced NLP with a secure, scalable web application to deliver a user-friendly tool for mental well-being.
 
 ## **Features**
 
@@ -46,4 +49,3 @@ CalmMindBot is an AI-driven chatbot designed to provide mental health support an
    ```
 
 5. Access the chatbot in your browser and start a conversation!
-

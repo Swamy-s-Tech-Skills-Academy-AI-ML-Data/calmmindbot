@@ -4,6 +4,32 @@ A Django-based AI-powered mental health counseling chatbot using OpenAI.
 
 ---
 
+## Reference(s)
+
+> 1. [Mental Health Counseling Conversations](https://huggingface.co/datasets/Amod/mental_health_counseling_conversations)
+
+## Project Setup
+
+```powershell
+python --version
+pip --version
+(.venv) PS D:\STSAAIMLDT\calmmindbot> python --version
+Python 3.12.5
+(.venv) PS D:\STSAAIMLDT\calmmindbot> pip --version
+pip 25.0.1 from D:\STSAAIMLDT\calmmindbot\.venv\Lib\site-packages\pip (python 3.12)
+(.venv) PS D:\STSAAIMLDT\calmmindbot>
+
+pip install virtualenv
+python -m venv .venv
+.venv/Scripts/activate
+python -m pip install --upgrade pip
+
+pip install flask openai python-dotenv flask_sqlalchemy
+
+pip freeze > requirements.txt
+pip install -r .\requirements.txt
+```
+
 ## Overview
 
 CalmMindBot is an AI-driven chatbot designed to provide empathetic and insightful mental health support. Built using **Django**, **OpenAI’s NLP models**, and web technologies (**HTML, CSS, JavaScript**), it enables users to engage in meaningful conversations, offering guidance, emotional support, and wellness resources.

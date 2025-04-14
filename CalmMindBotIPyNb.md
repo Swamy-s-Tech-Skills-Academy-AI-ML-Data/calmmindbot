@@ -4,6 +4,12 @@ The `calmmindbot.ipynb` notebook is designed to create a mental health counselin
 
 ---
 
+## **Key Features**
+
+- **Data Processing**: Structures raw data into a format suitable for OpenAI's API.
+- **Fine-Tuning**: Prepares and fine-tunes a model for mental health counseling.
+- **Testing**: Validates the fine-tuned model's performance.
+
 ## **Notebook Overview**
 
 This notebook is structured into multiple tasks to guide the development of the chatbot. It includes sections for installing dependencies, importing libraries, creating classes, loading and processing data, and fine-tuning the model.
@@ -59,12 +65,6 @@ This notebook is structured into multiple tasks to guide the development of the 
 - Compares the output of the fine-tuned model with the GPT-3.5-turbo model.
 
 ---
-
-## **Key Features**
-
-- **Data Processing**: Structures raw data into a format suitable for OpenAI's API.
-- **Fine-Tuning**: Prepares and fine-tunes a model for mental health counseling.
-- **Testing**: Validates the fine-tuned model's performance.
 
 ---
 

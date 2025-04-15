@@ -457,3 +457,5 @@ manage.py
 
 # example database
 drf_example
+
+db.sqlite3

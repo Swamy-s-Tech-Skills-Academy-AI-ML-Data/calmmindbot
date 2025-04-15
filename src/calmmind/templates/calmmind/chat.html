@@ -1,24 +1,19 @@
 {% extends 'base.html' %}
 
-{% block title %}calmmind Interface{% endblock %}
+{% block title %}Calm Mind - Chat{% endblock %}
 
 {% block content %}
-<h1 style="text-align: center;">🧘‍♂️ Calm Mind 🧘‍♂️</h1>
+<h1 class="text-center text-4xl font-bold my-4">🧘‍♂️ Calm Mind 🧘‍♂️</h1>
 
-
-<div id="chatArea"
-    style="border: 1px solid #ccc; border-radius: 10px; padding: 15px; height: 400px; overflow-y: auto; background-color: #f5f5f5; margin-bottom: 10px;">
+<div id="chatArea" class="border border-gray-300 rounded-lg p-4 h-96 overflow-y-auto bg-gray-100 mb-4">
 </div>
 
-
-<form id="chatForm" style="display: flex;">
+<form id="chatForm" class="flex space-x-2">
     <input type="text" id="userInput" placeholder="Type your message here..." aria-label="Type your message here"
-        style="flex: 1; padding: 10px; border-radius: 20px; border: 1px solid #ccc; font-size: 16px; outline: none;">
+        class="flex-1 p-2 rounded-full border border-gray-300 text-lg focus:outline-none">
     <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
-    <button type="submit"
-        style="padding: 10px 20px; margin-left: 10px; border: none; border-radius: 20px; background-color: #007bff; color: white; font-size: 16px; cursor: pointer;">Send</button>
+    <button type="submit" class="px-4 py-2 rounded-full bg-blue-500 text-white text-lg hover:bg-blue-600">Send</button>
 </form>
-
 
 <script>
     $(document).ready(function () {
@@ -89,7 +84,6 @@
         });
     });
 </script>
-
 
 <style>
     .chat-message {

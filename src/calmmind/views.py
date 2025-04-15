@@ -20,6 +20,7 @@ def calmmindbot_response(request):
                     "content": user_input,
                 }
             ],
+            # model="gpt-3.5-turbo-0125",
             model="gpt-3.5-turbo",
         )
         calmmind_reply = response.choices[0].message.content

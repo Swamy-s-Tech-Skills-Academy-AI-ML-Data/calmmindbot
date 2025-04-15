@@ -12,6 +12,12 @@ A Django-based AI-powered mental health counseling chatbot using OpenAI.
 > 1. [Django](https://www.djangoproject.com/)
 > 1. [Tailwind CSS](https://tailwindcss.com/docs/installation)
 
+## Prompts
+
+```text
+Every winter I find myself getting sad because of the weather. How can I fight this?
+```
+
 ## Project Setup
 
 ```powershell

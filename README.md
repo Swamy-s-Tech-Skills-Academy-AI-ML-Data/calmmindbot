@@ -95,6 +95,65 @@ Here's a clean, **consolidated version** of your CalmMindBot README that combine
 
 ---
 
+## Creation of a Virtual Environment and clammind_main project
+
+### 1. Create a Virtual Environment
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Swamy-s-Tech-Skills-Academy-AI-ML-Data/calmmindbot.git
+   cd calmmindbot
+   ```
+
+2. Create a Virtual Environment and activate it:
+
+   ```bash
+   python -m venv .venv
+   .venv\Scripts\activate  # On Windows
+   source .venv/bin/activate  # On macOS/Linux
+   pip freeze  # Should show no packages installed
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   pip install django
+   pip install --upgrade pip
+   pip install djangorestframework
+   pip freeze # It should show the installed packages
+   pip freeze > requirements.txt
+   ```
+
+4. Install dependencies from `requirements.txt`:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+5. Create the Django project:
+
+> 1. (.venv) PS D:\STSAAIMLDT\calmmindbot\src>
+> 2. Create a new Django project
+
+```bash
+    django-admin startproject calmmind_portal_main .
+    cd src
+```
+
+6. Apply migrations:
+
+   ```bash
+   python manage.py makemigrations
+   python manage.py migrate
+   ```
+
+7. Run the development server:
+
+   ```bash
+   python manage.py runserver
+   ```
+
 # CalmMindBot
 
 ## 🌟 Overview

@@ -5,6 +5,10 @@ import os
 
 
 # Create your views here.
+def home(request):
+    return render(request, 'home.html')
+
+
 def calmmindbot_response(request):
     if request.method == 'POST':
         client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))

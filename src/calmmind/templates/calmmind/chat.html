@@ -24,7 +24,9 @@
 
 
         function appendMessage(sender, message, isUser) {
-            const chatBubble = $('<div>').addClass('chat-bubble').text(message);
+
+            const chatBubble = $('<div>').addClass('chat-bubble').text(`${isUser ? '👤' : '🤖'}: ${message}`);
+
             const chatWrapper = $('<div>').addClass('chat-message').append(chatBubble);
 
 

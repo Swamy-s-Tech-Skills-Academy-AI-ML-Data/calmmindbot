@@ -120,7 +120,7 @@ Here's a clean, **consolidated version** of your CalmMindBot README that combine
    ```bash
    pip install django
    pip install --upgrade pip
-   pip install djangorestframework
+   pip install python-dotenv
    pip freeze # It should show the installed packages
    pip freeze > requirements.txt
    ```
@@ -153,6 +153,44 @@ Here's a clean, **consolidated version** of your CalmMindBot README that combine
    ```bash
    python manage.py runserver
    ```
+
+## Creating the "calmmind" App
+
+To create the `calmmind` app for managing student-related features, follow these steps:
+
+1. Navigate to the `src` directory:
+
+   ```bash
+   cd src
+   ```
+
+2. Create the `calmmind` app using Django's `startapp` command:
+
+   ```bash
+   python manage.py startapp calmmind
+   ```
+
+3. Add the `calmmind` app to the `INSTALLED_APPS` list in `student_portal_main/settings.py`:
+
+   ```python
+   INSTALLED_APPS = [
+       ...existing apps...
+       'calmmind',
+   ]
+   ```
+
+4. Define models for the `calmmind` app in `calmmind/models.py`.
+
+5. Run migrations to apply any changes:
+
+   ```bash
+   python manage.py makemigrations
+   python manage.py migrate
+   ```
+
+6. Create views, serializers, and URLs for the `calmmind` app as needed.
+
+> 1. [calmmind endpoints](http://127.0.0.1:8000/calmmind/) - This URL will be used to access the student portal.
 
 # CalmMindBot
 

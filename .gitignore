@@ -399,8 +399,10 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 
+# Removed duplicate entries for .venv
+
+# VirtualEnv
 .venv/
-.venv
 
 # Ignore JSONL files
 *.jsonl
@@ -447,9 +449,6 @@ coverage.xml
 .tox/
 .cache/
 .python-version
-
-# VirtualEnv
-.venv/
 
 # Developers
 *.sw*

@@ -7,6 +7,10 @@ A Django-based AI-powered mental health counseling chatbot using OpenAI.
 ## Reference(s)
 
 > 1. [Mental Health Counseling Conversations](https://huggingface.co/datasets/Amod/mental_health_counseling_conversations)
+> 1. [Favicon](https://favicon.io/emoji-favicons/)
+> 1. [OpenAI API](https://platform.openai.com/docs/api-reference/chat/create)
+> 1. [Django](https://www.djangoproject.com/)
+> 1. [Tailwind CSS](https://tailwindcss.com/docs/installation)
 
 ## Project Setup
 

@@ -1,21 +1,21 @@
 <!-- website/templates/navbar.html -->
-<nav class="bg-blue-300 text-white shadow-md">
+<nav class="bg-blue-300 text-Navy shadow-md">
     <div class="container mx-auto px-4 py-1 flex justify-between items-center">
         <a href="/"
-            class="text-2xl font-bold px-4 py-1 rounded transition-colors duration-200 hover:bg-blue-400 hover:text-white {% if request.path == '/' %} active-tab {% endif %}">
+            class="text-xl font-bold px-4 py-1 rounded transition-colors duration-200 hover:bg-blue-400 hover:text-white {% if request.path == '/' %} active-tab {% endif %}">
             Wellness - AI Assistant
         </a>
         <div class="space-x-4">
             <a href="/calmmind"
                 class="px-4 py-2 rounded transition-colors duration-200 hover:bg-blue-400 hover:text-white font-bold {% if request.path == '/calmmind/' %} active-tab {% endif %}">
-                Clam Mind
+                Calm Mind
             </a>
             <a href="/history"
                 class="px-4 py-2 rounded transition-colors duration-200 hover:bg-blue-400 hover:text-white font-bold {% if request.path == '/history' %} active-tab {% endif %}">
                 Search History
             </a>
             <a href="/logout"
-                class="bg-sky-500 hover:bg-sky-600 px-3 py-1 rounded transition-colors duration-200 font-bold">
+                class="bg-sky-500 hover:bg-sky-600 hover:text-white px-3 py-1 rounded transition-colors duration-200 font-bold">
                 Logout
             </a>
         </div>

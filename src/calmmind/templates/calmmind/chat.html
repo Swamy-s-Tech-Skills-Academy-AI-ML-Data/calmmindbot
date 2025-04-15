@@ -12,7 +12,7 @@
     <input type="text" id="userInput" placeholder="Type your message here..." aria-label="Type your message here"
         class="flex-1 p-2 rounded-full border border-gray-300 text-lg focus:outline-none">
     <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
-    <button type="submit" class="px-4 py-2 rounded-full bg-blue-500 text-white text-lg hover:bg-blue-600">Send</button>
+    <button type="submit" class="px-4 py-2 rounded-full bg-blue-400 text-white text-lg hover:bg-blue-500">Send</button>
 </form>
 
 <script>
@@ -30,7 +30,7 @@
 
             if (isUser) {
                 chatWrapper.css({ 'text-align': 'right' });
-                chatBubble.css({ 'background-color': '#007bff', 'color': 'white', 'border-radius': '15px 15px 0 15px' });
+                chatBubble.css({ 'background-color': '#e0f2fe', 'color': 'black', 'border-radius': '15px 15px 0 15px' });
             } else {
                 chatBubble.css({ 'background-color': '#eaeaea', 'color': '#333', 'border-radius': '15px 15px 15px 0' });
             }

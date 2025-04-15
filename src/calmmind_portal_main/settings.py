@@ -59,7 +59,7 @@ ROOT_URLCONF = 'calmmind_portal_main.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'chatbot', 'templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'calmmind', 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

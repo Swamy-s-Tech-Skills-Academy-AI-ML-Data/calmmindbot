@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+
+{% block title %}Calm Mind - Chat{% endblock %}
+
+{% block content %}
+<h1 class="text-center text-4xl font-bold my-4">🧘‍♂️ Calm Mind 🧘‍♂️</h1>
+
+<div id="chatArea" class="border border-gray-300 rounded-lg p-4 h-96 overflow-y-auto bg-gray-100 mb-4">
+</div>
+
+<form id="chatForm" class="flex space-x-2">
+    <input type="text" id="userInput" placeholder="Type your message here..." aria-label="Type your message here"
+        class="flex-1 p-2 rounded-full border border-gray-300 text-lg focus:outline-none">
+    <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+    <button type="submit" class="px-4 py-2 rounded-full bg-blue-400 text-white text-lg hover:bg-blue-500">Send</button>
+</form>
+
+<script>
+    $(document).ready(function () {
+
+        function scrollToBottom() {
+            $('#chatArea').scrollTop($('#chatArea')[0].scrollHeight);
+        }
+
+
+        function appendMessage(sender, message, isUser) {
+
+            const chatBubble = $('<div>').addClass('chat-bubble').text(`${isUser ? '👤' : '🤖'}: ${message}`);
+
+            const chatWrapper = $('<div>').addClass('chat-message').append(chatBubble);
+
+
+            if (isUser) {
+                chatWrapper.css({ 'text-align': 'right' });
+                chatBubble.css({ 'background-color': '#e0f2fe', 'color': 'black', 'border-radius': '15px 15px 0 15px' });
+            } else {
+                chatBubble.css({ 'background-color': '#eaeaea', 'color': '#333', 'border-radius': '15px 15px 15px 0' });
+            }
+
+            $('#chatArea').append(chatWrapper);
+            scrollToBottom();
+        }
+
+        $('#chatForm').on('submit', function (event) {
+            event.preventDefault();
+
+
+            var userInput = $('#userInput').val().trim();
+
+
+            if (!userInput) {
+                alert('Please enter a message.');
+                return;
+            }
+
+
+            appendMessage('You', userInput, true);
+
+
+            $('#userInput').prop('disabled', true);
+            $('button[type="submit"]').prop('disabled', true);
+
+
+            $.ajax({
+                url: '',
+                type: 'POST',
+                data: {
+                    'user_input': userInput,
+                    'csrfmiddlewaretoken': '{{ csrf_token }}'
+                },
+                success: function (response) {
+
+                    appendMessage('Bot', response.reply, false);
+                    $('#userInput').val('');
+                    $('#userInput').focus();
+                },
+                error: function () {
+                    alert('Something went wrong. Please try again.');
+                },
+                complete: function () {
+
+                    $('#userInput').prop('disabled', false);
+                    $('button[type="submit"]').prop('disabled', false);
+                }
+            });
+        });
+    });
+</script>
+
+<style>
+    .chat-message {
+        margin: 10px 0;
+    }
+
+    .chat-bubble {
+        display: inline-block;
+        padding: 10px 15px;
+        max-width: 70%;
+        word-wrap: break-word;
+        font-size: 16px;
+    }
+</style>
+{% endblock %}

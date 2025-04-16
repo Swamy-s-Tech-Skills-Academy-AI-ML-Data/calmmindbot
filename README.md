@@ -7,6 +7,16 @@ A Django-based AI-powered mental health counseling chatbot using OpenAI.
 ## Reference(s)
 
 > 1. [Mental Health Counseling Conversations](https://huggingface.co/datasets/Amod/mental_health_counseling_conversations)
+> 1. [Favicon](https://favicon.io/emoji-favicons/)
+> 1. [OpenAI API](https://platform.openai.com/docs/api-reference/chat/create)
+> 1. [Django](https://www.djangoproject.com/)
+> 1. [Tailwind CSS](https://tailwindcss.com/docs/installation)
+
+## Prompts
+
+```text
+Every winter I find myself getting sad because of the weather. How can I fight this?
+```
 
 ## Project Setup
 
@@ -94,6 +104,103 @@ The `data` folder contains the following files:
 Here's a clean, **consolidated version** of your CalmMindBot README that combines clarity, structure, and professionalism, while staying concise and impactful:
 
 ---
+
+## Creation of a Virtual Environment and clammind_main project
+
+### 1. Create a Virtual Environment
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Swamy-s-Tech-Skills-Academy-AI-ML-Data/calmmindbot.git
+   cd calmmindbot
+   ```
+
+2. Create a Virtual Environment and activate it:
+
+   ```bash
+   python -m venv .venv
+   .venv\Scripts\activate  # On Windows
+   source .venv/bin/activate  # On macOS/Linux
+   pip freeze  # Should show no packages installed
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   pip install django
+   pip install --upgrade pip
+   pip install python-dotenv
+   pip freeze # It should show the installed packages
+   pip freeze > requirements.txt
+   ```
+
+4. Install dependencies from `requirements.txt`:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+5. Create the Django project:
+
+> 1. (.venv) PS D:\STSAAIMLDT\calmmindbot\src>
+> 2. Create a new Django project
+
+```bash
+    django-admin startproject calmmind_portal_main .
+    cd src
+```
+
+6. Apply migrations:
+
+   ```bash
+   python manage.py makemigrations
+   python manage.py migrate
+   ```
+
+7. Run the development server:
+
+   ```bash
+   python manage.py runserver
+   ```
+
+## Creating the "calmmind" App
+
+To create the `calmmind` app for managing student-related features, follow these steps:
+
+1. Navigate to the `src` directory:
+
+   ```bash
+   cd src
+   ```
+
+2. Create the `calmmind` app using Django's `startapp` command:
+
+   ```bash
+   python manage.py startapp calmmind
+   ```
+
+3. Add the `calmmind` app to the `INSTALLED_APPS` list in `student_portal_main/settings.py`:
+
+   ```python
+   INSTALLED_APPS = [
+       ...existing apps...
+       'calmmind',
+   ]
+   ```
+
+4. Define models for the `calmmind` app in `calmmind/models.py`.
+
+5. Run migrations to apply any changes:
+
+   ```bash
+   python manage.py makemigrations
+   python manage.py migrate
+   ```
+
+6. Create views, serializers, and URLs for the `calmmind` app as needed.
+
+> 1. [calmmind endpoints](http://127.0.0.1:8000/calmmind/) - This URL will be used to access the student portal.
 
 # CalmMindBot
 

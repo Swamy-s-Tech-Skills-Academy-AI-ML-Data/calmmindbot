@@ -1,12 +1,41 @@
-# 🧘‍♂️ CalmMindBot – AI-Powered Mental Health Counseling Chatbot 🧘‍♂️
+# 🧘‍♂️ Calm Mind – AI Powered Mental Health Counseling bot 🧘‍♂️
 
 A Django-based AI-powered mental health counseling chatbot using OpenAI.
 
 ---
 
+## 🌟 Overview
+
+**CalmMindBot** is a conversational chatbot designed to provide empathetic, AI-driven support for mental health and emotional well-being. Built with **Django**, **OpenAI’s NLP**, and a user-friendly **HTML/CSS/JavaScript** interface, it enables secure, real-time conversations to help users feel heard, supported, and guided.
+
+## 🔧 Tech Stack
+
+- **Backend:** Django (Python)
+- **AI Engine:** OpenAI API (GPT-based models)
+- **Frontend:** HTML, CSS, JavaScript
+- **Deployment Ready:** Scalable and secure for real-world use
+
+## 🚀 Key Features
+
+- 💬 **Conversational AI** for mental health support
+- 🧠 **Context-aware responses** powered by OpenAI
+- 🔒 **Secure, scalable Django backend**
+- 🌐 **Responsive web interface**
+- 🛠️ **Easily customizable** for future enhancements
+
+## 📦 Deliverables
+
+- ✅ Fully functional Django web app with real-time AI chatbot
+- ✅ Seamless OpenAI integration for rich NLP-based conversations
+- ✅ Flexible foundation for future mental health tech innovations
+
+## 💡 Vision
+
+CalmMindBot is built with compassion and cutting-edge technology to bridge the gap between emotional support and digital accessibility—making mental health care more approachable, one chat at a time.
+
 ## Reference(s)
 
-> 1. [Mental Health Counseling Conversations](https://huggingface.co/datasets/Amod/mental_health_counseling_conversations)
+> 1. [Datasets: Mental Health Counseling Conversations](https://huggingface.co/datasets/Amod/mental_health_counseling_conversations)
 > 1. [Favicon](https://favicon.io/emoji-favicons/)
 > 1. [OpenAI API](https://platform.openai.com/docs/api-reference/chat/create)
 > 1. [Django](https://www.djangoproject.com/)
@@ -208,29 +237,6 @@ To create the `calmmind` app for managing student-related features, follow these
 
 # CalmMindBot
 
-## 🌟 Overview
-
-**CalmMindBot** is a conversational chatbot designed to provide empathetic, AI-driven support for mental health and emotional well-being. Built with **Django**, **OpenAI’s NLP**, and a user-friendly **HTML/CSS/JavaScript** interface, it enables secure, real-time conversations to help users feel heard, supported, and guided.
-
----
-
-## 🔧 Tech Stack
-
-- **Backend:** Django (Python)
-- **AI Engine:** OpenAI API (GPT-based models)
-- **Frontend:** HTML, CSS, JavaScript
-- **Deployment Ready:** Scalable and secure for real-world use
-
----
-
-## 🚀 Key Features
-
-- 💬 **Conversational AI** for mental health support
-- 🧠 **Context-aware responses** powered by OpenAI
-- 🔒 **Secure, scalable Django backend**
-- 🌐 **Responsive web interface**
-- 🛠️ **Easily customizable** for future enhancements
-
 ---
 
 ## 🛠️ Installation & Usage
@@ -252,15 +258,3 @@ python manage.py runserver
 👉 Open your browser and visit: [http://127.0.0.1:8000](http://127.0.0.1:8000) to start a session.
 
 ---
-
-## 📦 Deliverables
-
-- ✅ Fully functional Django web app with real-time AI chatbot
-- ✅ Seamless OpenAI integration for rich NLP-based conversations
-- ✅ Flexible foundation for future mental health tech innovations
-
----
-
-## 💡 Vision
-
-CalmMindBot is built with compassion and cutting-edge technology to bridge the gap between emotional support and digital accessibility—making mental health care more approachable, one chat at a time.

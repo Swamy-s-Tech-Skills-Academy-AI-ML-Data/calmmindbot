@@ -18,6 +18,10 @@ A Django-based AI-powered mental health counseling chatbot using OpenAI.
 Every winter I find myself getting sad because of the weather. How can I fight this?
 ```
 
+## UI First Look
+
+![UI First Look](./docs/images/UIFirstLook.PNG)
+
 ## Project Setup
 
 ```powershell

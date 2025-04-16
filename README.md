@@ -8,6 +8,13 @@ A Django-based AI-powered mental health counseling chatbot using OpenAI.
 
 **CalmMindBot** is a conversational chatbot designed to provide empathetic, AI-driven support for mental health and emotional well-being. Built with **Django**, **OpenAI’s NLP**, and a user-friendly **HTML/CSS/JavaScript** interface, it enables secure, real-time conversations to help users feel heard, supported, and guided.
 
+```text
+Create a new Django app: For example, api_service.
+Define API endpoints: Use Django REST Framework (DRF) to create RESTful APIs.
+Move external service logic: Transfer the logic from views.py to the new app.
+Integrate with the main project: Include the new app in INSTALLED_APPS and route its URLs.
+```
+
 ## 🔧 Tech Stack
 
 - **Backend:** Django (Python)
@@ -309,10 +316,12 @@ To deploy CalmMindBot to a production environment:
 ## 📊 Data File Details
 
 ### `train.jsonl`
+
 - **Purpose**: Used for fine-tuning the chatbot model.
 - **Structure**: JSONL format with each line representing a training example.
 
 ### `validation.jsonl`
+
 - **Purpose**: Used for evaluating the chatbot model's performance.
 - **Structure**: JSONL format with each line representing a validation example.
 

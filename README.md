@@ -54,7 +54,55 @@ CalmMind is built with compassion and cutting-edge technology to bridge the gap 
 > 1. [Django](https://www.djangoproject.com/)
 > 1. [Tailwind CSS](https://tailwindcss.com/docs/installation)
 
-## Prompts
+## 🛠 Project Setup
+
+### 1. Create & Activate a Virtual Environment
+
+```bash
+git clone https://github.com/Swamy-s-Tech-Skills-Academy-AI-ML-Data/CalmMind.git
+cd CalmMind
+
+python -m venv .venv
+.venv\Scripts\activate  # Windows
+source .venv/bin/activate  # macOS/Linux
+
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+### 2. Initialize Django Project
+
+```bash
+django-admin startproject calmmind_portal_main .
+cd src
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+```
+
+### **3. Create the "calmmind" App**
+
+```bash
+python manage.py startapp calmmind
+```
+
+#### **Add `calmmind` to `INSTALLED_APPS` in `settings.py`:**
+
+```python
+INSTALLED_APPS = [
+    ...existing apps...,
+    'calmmind',
+]
+```
+
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
+
+👉 **Access your chatbot** at: [http://127.0.0.1:8000](http://127.0.0.1:8000)
+
+## Sample Prompts
 
 ```text
 Every winter I find myself getting sad because of the weather. How can I fight this?
@@ -338,52 +386,6 @@ To deploy CalmMind to a production environment:
 ---
 
 ---
-
-## 🛠 Project Setup
-
-### **1. Create & Activate a Virtual Environment**
-
-```bash
-git clone https://github.com/Swamy-s-Tech-Skills-Academy-AI-ML-Data/CalmMind.git
-cd CalmMind
-python -m venv .venv
-.venv\Scripts\activate  # Windows
-source .venv/bin/activate  # macOS/Linux
-pip install --upgrade pip
-pip install -r requirements.txt
-```
-
-### **2. Initialize Django Project**
-
-```bash
-django-admin startproject calmmind_portal_main .
-cd src
-python manage.py makemigrations
-python manage.py migrate
-python manage.py runserver
-```
-
-### **3. Create the "calmmind" App**
-
-```bash
-python manage.py startapp calmmind
-```
-
-#### **Add `calmmind` to `INSTALLED_APPS` in `settings.py`:**
-
-```python
-INSTALLED_APPS = [
-    ...existing apps...,
-    'calmmind',
-]
-```
-
-```bash
-python manage.py makemigrations
-python manage.py migrate
-```
-
-👉 **Access your chatbot** at: [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
 ---
 

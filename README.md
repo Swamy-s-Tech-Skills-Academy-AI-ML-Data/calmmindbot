@@ -6,33 +6,41 @@ A `Django-based AI chatbot` leveraging `OpenAI's NLP` to offer empathetic mental
 
 **CalmMind** is a conversational chatbot designed to provide empathetic, AI-driven support for mental health and emotional well-being. Built with `Django`, `OpenAI’s NLP`, and a user-friendly `HTML/CSS/JavaScript` interface, it enables secure, real-time conversations to help users feel heard, supported, and guided.
 
-```text
-Create a new Django app: For example, api_service.
-Define API endpoints: Use Django REST Framework (DRF) to create RESTful APIs.
-Move external service logic: Transfer the logic from views.py to the new app.
-Integrate with the main project: Include the new app in INSTALLED_APPS and route its URLs.
-```
+## 📝 Todo list
+
+- [ ] Create a new Django app for the external service logic.
+- [ ] Define API endpoints using Django REST Framework (DRF).
+- [ ] Move external service logic from views.py to the new app.
+- [ ] Integrate the new app with the main project by including it in INSTALLED_APPS and routing its URLs.
+- [ ] Create a new Django app: For example, api_service.
+- [ ] Define API endpoints: Use Django REST Framework (DRF) to create RESTful APIs.
+- [ ] Implement authentication for API endpoints to ensure secure access.
+- [ ] Write unit tests for the new app to ensure functionality and reliability.
 
 ## 🔧 Tech Stack
 
-- **Backend:** Django (Python)
-- **AI Engine:** OpenAI API (GPT-based models)
-- **Frontend:** HTML, CSS, JavaScript
-- **Deployment Ready:** Scalable and secure for real-world use
+- `Backend:` Django (Python)
+- `AI Engine:` OpenAI API (GPT-based models)
+- `Frontend:` HTML, CSS, JavaScript
+- `Deployment Ready:` Scalable and secure for real-world use
 
 ## 🚀 Key Features
 
-- 💬 **Conversational AI** for mental health support
-- 🧠 **Context-aware responses** powered by OpenAI
-- 🔒 **Secure, scalable Django backend**
-- 🌐 **Responsive web interface**
-- 🛠️ **Easily customizable** for future enhancements
+- 💬 `Conversational AI` for mental health support
+- 🧠 `Context-aware responses` powered by OpenAI
+- 🔒 `Secure, scalable Django backend`
+- 🌐 `Responsive web interface`
+- 🛠️ `Easily customizable` for future enhancements
 
 ## 📦 Deliverables
 
-- ✅ Fully functional Django web app with real-time AI chatbot
-- ✅ Seamless OpenAI integration for rich NLP-based conversations
+- ✅ Fully functional `Django web app` with real-time AI chatbot
+- ✅ Seamless `OpenAI integration` for rich NLP-based conversations
 - ✅ Flexible foundation for future mental health tech innovations
+
+## 🎨 UI Preview
+
+![UI First Look](./docs/images/UIFirstLook.PNG)
 
 ## 💡 Vision
 
@@ -328,45 +336,6 @@ To deploy CalmMind to a production environment:
 ---
 
 ---
-
----
-
-## 🔧 Tech Stack
-
-- **Backend:** Django (Python)
-- **AI Engine:** OpenAI API (GPT-based models)
-- **Frontend:** HTML, CSS, JavaScript
-- **Deployment:** Scalable and secure
-
----
-
-## 🚀 Key Features
-
-✅ AI-powered conversational support  
-✅ Context-aware responses  
-✅ Secure Django backend  
-✅ Responsive and user-friendly UI  
-✅ Customizable chatbot behavior
-
----
-
-## 📦 Deliverables
-
-- Fully functional **Django web app** with AI chatbot
-- Seamless **OpenAI integration** for NLP-driven interactions
-- Scalable foundation for future enhancements
-
----
-
-## 💡 Vision
-
-CalmMind blends **technology and compassion** to make **mental health care more accessible**, bridging the gap between users and professional emotional support.
-
----
-
-## 🎨 UI Preview
-
-![UI First Look](./docs/images/UIFirstLook.PNG)
 
 ---
 

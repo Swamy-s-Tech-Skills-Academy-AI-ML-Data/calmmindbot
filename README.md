@@ -70,6 +70,22 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
+3. Install dependencies:
+
+   ```bash
+   pip install django
+   pip install --upgrade pip
+   pip install python-dotenv
+   pip freeze # It should show the installed packages
+   pip freeze > requirements.txt
+   ```
+
+4. Install dependencies from `requirements.txt`:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
 ### 2. Initialize Django Project
 
 ```bash

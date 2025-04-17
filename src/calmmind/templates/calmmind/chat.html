@@ -8,7 +8,12 @@
 <div id="chatArea" class="border border-gray-300 rounded-lg p-4 h-96 overflow-y-auto bg-gray-100 mb-4">
 </div>
 
+<!-- Added dropdown for model selection -->
 <form id="chatForm" class="flex space-x-2">
+    <select id="modelSelect" name="model" class="p-2 rounded border border-gray-300 text-lg text-blue-600">
+        <option value="gpt-3.5-turbo">GPT-3.5 Turbo</option>
+        <option value="gpt-3.5-turbo-0125">GPT-3.5 Turbo (Fine Tuned)</option>
+    </select>
     <input type="text" id="userInput" placeholder="Type your message here..." aria-label="Type your message here"
         class="flex-1 p-2 rounded-full border border-gray-300 text-lg focus:outline-none">
     <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
@@ -66,6 +71,7 @@
                 type: 'POST',
                 data: {
                     'user_input': userInput,
+                    'model': $('#modelSelect').val(),
                     'csrfmiddlewaretoken': '{{ csrf_token }}'
                 },
                 success: function (response) {

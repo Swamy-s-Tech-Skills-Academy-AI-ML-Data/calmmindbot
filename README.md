@@ -1,12 +1,48 @@
-# 🧘‍♂️ CalmMindBot – AI-Powered Mental Health Counseling Chatbot 🧘‍♂️
+# 🧘‍♂️ Calm Mind – AI Powered Mental Health Counseling bot 🧘‍♂️
 
 A Django-based AI-powered mental health counseling chatbot using OpenAI.
 
 ---
 
+## 🌟 Overview
+
+**CalmMindBot** is a conversational chatbot designed to provide empathetic, AI-driven support for mental health and emotional well-being. Built with **Django**, **OpenAI’s NLP**, and a user-friendly **HTML/CSS/JavaScript** interface, it enables secure, real-time conversations to help users feel heard, supported, and guided.
+
+```text
+Create a new Django app: For example, api_service.
+Define API endpoints: Use Django REST Framework (DRF) to create RESTful APIs.
+Move external service logic: Transfer the logic from views.py to the new app.
+Integrate with the main project: Include the new app in INSTALLED_APPS and route its URLs.
+```
+
+## 🔧 Tech Stack
+
+- **Backend:** Django (Python)
+- **AI Engine:** OpenAI API (GPT-based models)
+- **Frontend:** HTML, CSS, JavaScript
+- **Deployment Ready:** Scalable and secure for real-world use
+
+## 🚀 Key Features
+
+- 💬 **Conversational AI** for mental health support
+- 🧠 **Context-aware responses** powered by OpenAI
+- 🔒 **Secure, scalable Django backend**
+- 🌐 **Responsive web interface**
+- 🛠️ **Easily customizable** for future enhancements
+
+## 📦 Deliverables
+
+- ✅ Fully functional Django web app with real-time AI chatbot
+- ✅ Seamless OpenAI integration for rich NLP-based conversations
+- ✅ Flexible foundation for future mental health tech innovations
+
+## 💡 Vision
+
+CalmMindBot is built with compassion and cutting-edge technology to bridge the gap between emotional support and digital accessibility—making mental health care more approachable, one chat at a time.
+
 ## Reference(s)
 
-> 1. [Mental Health Counseling Conversations](https://huggingface.co/datasets/Amod/mental_health_counseling_conversations)
+> 1. [Datasets: Mental Health Counseling Conversations](https://huggingface.co/datasets/Amod/mental_health_counseling_conversations)
 > 1. [Favicon](https://favicon.io/emoji-favicons/)
 > 1. [OpenAI API](https://platform.openai.com/docs/api-reference/chat/create)
 > 1. [Django](https://www.djangoproject.com/)
@@ -17,6 +53,10 @@ A Django-based AI-powered mental health counseling chatbot using OpenAI.
 ```text
 Every winter I find myself getting sad because of the weather. How can I fight this?
 ```
+
+## UI First Look
+
+![UI First Look](./docs/images/UIFirstLook.PNG)
 
 ## Project Setup
 
@@ -204,29 +244,6 @@ To create the `calmmind` app for managing student-related features, follow these
 
 # CalmMindBot
 
-## 🌟 Overview
-
-**CalmMindBot** is a conversational chatbot designed to provide empathetic, AI-driven support for mental health and emotional well-being. Built with **Django**, **OpenAI’s NLP**, and a user-friendly **HTML/CSS/JavaScript** interface, it enables secure, real-time conversations to help users feel heard, supported, and guided.
-
----
-
-## 🔧 Tech Stack
-
-- **Backend:** Django (Python)
-- **AI Engine:** OpenAI API (GPT-based models)
-- **Frontend:** HTML, CSS, JavaScript
-- **Deployment Ready:** Scalable and secure for real-world use
-
----
-
-## 🚀 Key Features
-
-- 💬 **Conversational AI** for mental health support
-- 🧠 **Context-aware responses** powered by OpenAI
-- 🔒 **Secure, scalable Django backend**
-- 🌐 **Responsive web interface**
-- 🛠️ **Easily customizable** for future enhancements
-
 ---
 
 ## 🛠️ Installation & Usage
@@ -249,14 +266,63 @@ python manage.py runserver
 
 ---
 
-## 📦 Deliverables
+## 🤝 Contribution Guidelines
 
-- ✅ Fully functional Django web app with real-time AI chatbot
-- ✅ Seamless OpenAI integration for rich NLP-based conversations
-- ✅ Flexible foundation for future mental health tech innovations
+We welcome contributions to CalmMindBot! To contribute:
+
+1. **Fork the repository** on GitHub.
+2. **Clone your fork** to your local machine.
+3. **Create a new branch** for your feature or bug fix:
+   ```bash
+   git checkout -b feature-name
+   ```
+4. **Make your changes** and commit them with clear messages:
+   ```bash
+   git commit -m "Add feature-name: Description of changes"
+   ```
+5. **Push your changes** to your fork:
+   ```bash
+   git push origin feature-name
+   ```
+6. **Submit a pull request** to the main repository.
 
 ---
 
-## 💡 Vision
+## 🌐 Deployment Instructions
 
-CalmMindBot is built with compassion and cutting-edge technology to bridge the gap between emotional support and digital accessibility—making mental health care more approachable, one chat at a time.
+To deploy CalmMindBot to a production environment:
+
+1. **Set up a production server** (e.g., AWS, Azure, or Heroku).
+2. **Install required dependencies** on the server:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. **Set up environment variables** for sensitive data (e.g., OpenAI API keys).
+4. **Run database migrations**:
+   ```bash
+   python manage.py migrate
+   ```
+5. **Collect static files**:
+   ```bash
+   python manage.py collectstatic
+   ```
+6. **Start the server** using a production-ready WSGI server (e.g., Gunicorn):
+   ```bash
+   gunicorn calmmind_portal_main.wsgi:application
+   ```
+
+---
+
+## 📊 Data File Details
+
+### `train.jsonl`
+
+- **Purpose**: Used for fine-tuning the chatbot model.
+- **Structure**: JSONL format with each line representing a training example.
+
+### `validation.jsonl`
+
+- **Purpose**: Used for evaluating the chatbot model's performance.
+- **Structure**: JSONL format with each line representing a validation example.
+
+> **Note**: These files are excluded from version control to protect sensitive data and reduce repository size.

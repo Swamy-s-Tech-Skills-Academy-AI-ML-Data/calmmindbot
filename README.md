@@ -1,12 +1,10 @@
 # 🧘‍♂️ Calm Mind – AI Powered Mental Health Counseling bot 🧘‍♂️
 
-A Django-based AI-powered mental health counseling chatbot using OpenAI.
-
----
+A `Django-based AI chatbot` leveraging `OpenAI's NLP` to offer empathetic mental health support.
 
 ## 🌟 Overview
 
-**CalmMindBot** is a conversational chatbot designed to provide empathetic, AI-driven support for mental health and emotional well-being. Built with **Django**, **OpenAI’s NLP**, and a user-friendly **HTML/CSS/JavaScript** interface, it enables secure, real-time conversations to help users feel heard, supported, and guided.
+**CalmMind** is a conversational chatbot designed to provide empathetic, AI-driven support for mental health and emotional well-being. Built with `Django`, `OpenAI’s NLP`, and a user-friendly `HTML/CSS/JavaScript` interface, it enables secure, real-time conversations to help users feel heard, supported, and guided.
 
 ```text
 Create a new Django app: For example, api_service.
@@ -38,7 +36,7 @@ Integrate with the main project: Include the new app in INSTALLED_APPS and route
 
 ## 💡 Vision
 
-CalmMindBot is built with compassion and cutting-edge technology to bridge the gap between emotional support and digital accessibility—making mental health care more approachable, one chat at a time.
+CalmMind is built with compassion and cutting-edge technology to bridge the gap between emotional support and digital accessibility—making mental health care more approachable, one chat at a time.
 
 ## Reference(s)
 
@@ -63,11 +61,11 @@ Every winter I find myself getting sad because of the weather. How can I fight t
 ```powershell
 python --version
 pip --version
-(.venv) PS D:\STSAAIMLDT\calmmindbot> python --version
+(.venv) PS D:\STSAAIMLDT\CalmMind> python --version
 Python 3.12.5
-(.venv) PS D:\STSAAIMLDT\calmmindbot> pip --version
-pip 25.0.1 from D:\STSAAIMLDT\calmmindbot\.venv\Lib\site-packages\pip (python 3.12)
-(.venv) PS D:\STSAAIMLDT\calmmindbot>
+(.venv) PS D:\STSAAIMLDT\CalmMind> pip --version
+pip 25.0.1 from D:\STSAAIMLDT\CalmMind\.venv\Lib\site-packages\pip (python 3.12)
+(.venv) PS D:\STSAAIMLDT\CalmMind>
 
 pip install virtualenv
 python -m venv .venv
@@ -82,7 +80,7 @@ pip install -r .\requirements.txt
 
 ## Overview
 
-CalmMindBot is an AI-driven chatbot designed to provide empathetic and insightful mental health support. Built using **Django**, **OpenAI’s NLP models**, and web technologies (**HTML, CSS, JavaScript**), it enables users to engage in meaningful conversations, offering guidance, emotional support, and wellness resources.
+CalmMind is an AI-driven chatbot designed to provide empathetic and insightful mental health support. Built using **Django**, **OpenAI’s NLP models**, and web technologies (**HTML, CSS, JavaScript**), it enables users to engage in meaningful conversations, offering guidance, emotional support, and wellness resources.
 
 ## **Project Scope**
 
@@ -108,13 +106,13 @@ This project develops an AI-powered mental health chatbot using OpenAI's API and
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/vishipayyallore/CalmMindBot.git
+   git clone https://github.com/vishipayyallore/CalmMind.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd CalmMindBot
+   cd CalmMind
    ```
 
 3. Install dependencies:
@@ -141,7 +139,7 @@ The `data` folder contains the following files:
 
 > **Note**: These files are excluded from version control using `.gitignore` to ensure sensitive or large data is not committed to the repository.
 
-Here's a clean, **consolidated version** of your CalmMindBot README that combines clarity, structure, and professionalism, while staying concise and impactful:
+Here's a clean, **consolidated version** of your CalmMind README that combines clarity, structure, and professionalism, while staying concise and impactful:
 
 ---
 
@@ -152,8 +150,8 @@ Here's a clean, **consolidated version** of your CalmMindBot README that combine
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Swamy-s-Tech-Skills-Academy-AI-ML-Data/calmmindbot.git
-   cd calmmindbot
+   git clone https://github.com/Swamy-s-Tech-Skills-Academy-AI-ML-Data/CalmMind.git
+   cd CalmMind
    ```
 
 2. Create a Virtual Environment and activate it:
@@ -183,7 +181,7 @@ Here's a clean, **consolidated version** of your CalmMindBot README that combine
 
 5. Create the Django project:
 
-> 1. (.venv) PS D:\STSAAIMLDT\calmmindbot\src>
+> 1. (.venv) PS D:\STSAAIMLDT\CalmMind\src>
 > 2. Create a new Django project
 
 ```bash
@@ -242,7 +240,7 @@ To create the `calmmind` app for managing student-related features, follow these
 
 > 1. [calmmind endpoints](http://127.0.0.1:8000/calmmind/) - This URL will be used to access the student portal.
 
-# CalmMindBot
+# CalmMind
 
 ---
 
@@ -250,10 +248,10 @@ To create the `calmmind` app for managing student-related features, follow these
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/vishipayyallore/CalmMindBot.git
+git clone https://github.com/vishipayyallore/CalmMind.git
 
 # 2. Navigate to the project folder
-cd CalmMindBot
+cd CalmMind
 
 # 3. Install dependencies
 pip install -r requirements.txt
@@ -268,7 +266,7 @@ python manage.py runserver
 
 ## 🤝 Contribution Guidelines
 
-We welcome contributions to CalmMindBot! To contribute:
+We welcome contributions to CalmMind! To contribute:
 
 1. **Fork the repository** on GitHub.
 2. **Clone your fork** to your local machine.
@@ -290,7 +288,7 @@ We welcome contributions to CalmMindBot! To contribute:
 
 ## 🌐 Deployment Instructions
 
-To deploy CalmMindBot to a production environment:
+To deploy CalmMind to a production environment:
 
 1. **Set up a production server** (e.g., AWS, Azure, or Heroku).
 2. **Install required dependencies** on the server:
@@ -326,3 +324,179 @@ To deploy CalmMindBot to a production environment:
 - **Structure**: JSONL format with each line representing a validation example.
 
 > **Note**: These files are excluded from version control to protect sensitive data and reduce repository size.
+
+---
+
+---
+
+---
+
+## 🔧 Tech Stack
+
+- **Backend:** Django (Python)
+- **AI Engine:** OpenAI API (GPT-based models)
+- **Frontend:** HTML, CSS, JavaScript
+- **Deployment:** Scalable and secure
+
+---
+
+## 🚀 Key Features
+
+✅ AI-powered conversational support  
+✅ Context-aware responses  
+✅ Secure Django backend  
+✅ Responsive and user-friendly UI  
+✅ Customizable chatbot behavior
+
+---
+
+## 📦 Deliverables
+
+- Fully functional **Django web app** with AI chatbot
+- Seamless **OpenAI integration** for NLP-driven interactions
+- Scalable foundation for future enhancements
+
+---
+
+## 💡 Vision
+
+CalmMind blends **technology and compassion** to make **mental health care more accessible**, bridging the gap between users and professional emotional support.
+
+---
+
+## 🎨 UI Preview
+
+![UI First Look](./docs/images/UIFirstLook.PNG)
+
+---
+
+## 🛠 Project Setup
+
+### **1. Create & Activate a Virtual Environment**
+
+```bash
+git clone https://github.com/Swamy-s-Tech-Skills-Academy-AI-ML-Data/CalmMind.git
+cd CalmMind
+python -m venv .venv
+.venv\Scripts\activate  # Windows
+source .venv/bin/activate  # macOS/Linux
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+### **2. Initialize Django Project**
+
+```bash
+django-admin startproject calmmind_portal_main .
+cd src
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+```
+
+### **3. Create the "calmmind" App**
+
+```bash
+python manage.py startapp calmmind
+```
+
+#### **Add `calmmind` to `INSTALLED_APPS` in `settings.py`:**
+
+```python
+INSTALLED_APPS = [
+    ...existing apps...,
+    'calmmind',
+]
+```
+
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
+
+👉 **Access your chatbot** at: [http://127.0.0.1:8000](http://127.0.0.1:8000)
+
+---
+
+## 🛠️ Installation & Usage
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/vishipayyallore/CalmMind.git
+
+# 2. Navigate to the project folder
+cd CalmMind
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Run the Django development server
+python manage.py runserver
+```
+
+---
+
+## 📊 Data File Details
+
+### `train.jsonl`
+
+- **Purpose**: Used for fine-tuning the chatbot model.
+- **Structure**: JSONL format with structured training data.
+
+### `validation.jsonl`
+
+- **Purpose**: Used for model performance evaluation.
+- **Structure**: JSONL format with validation examples.
+
+> **Note**: These files are excluded from version control to protect sensitive data and reduce repository size.
+
+---
+
+## 🤝 Contribution Guidelines
+
+We welcome contributions! Follow these steps to contribute:
+
+1. **Fork the repository** on GitHub.
+2. **Clone your fork** to your local machine.
+3. **Create a new branch** for your feature or bug fix:
+   ```bash
+   git checkout -b feature-name
+   ```
+4. **Make your changes** and commit them with clear messages:
+   ```bash
+   git commit -m "Add feature-name: Description of changes"
+   ```
+5. **Push your changes** to your fork:
+   ```bash
+   git push origin feature-name
+   ```
+6. **Submit a pull request** to the main repository.
+
+---
+
+## 🌐 Deployment Instructions
+
+To deploy CalmMind to a production environment:
+
+1. **Set up a production server** (e.g., AWS, Azure, or Heroku).
+2. **Install required dependencies** on the server:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. **Set up environment variables** for sensitive data (e.g., OpenAI API keys).
+4. **Run database migrations**:
+   ```bash
+   python manage.py migrate
+   ```
+5. **Collect static files**:
+   ```bash
+   python manage.py collectstatic
+   ```
+6. **Start the server** using a production-ready WSGI server (e.g., Gunicorn):
+   ```bash
+   gunicorn calmmind_portal_main.wsgi:application
+   ```
+
+---
+
+This version **removes redundancies**, **keeps everything structured**, and **ensures clarity and professional presentation**. Let me know if you'd like further refinements! 🚀

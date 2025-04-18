@@ -15,7 +15,7 @@
         <option value="gpt-3.5-turbo-0125">GPT-3.5 Turbo (Fine Tuned)</option>
     </select>
     <input type="text" id="userInput" placeholder="Type your message here..." aria-label="Type your message here"
-        class="flex-1 p-2 rounded-full border border-gray-300 text-lg focus:outline-none">
+        class="flex-1 p-2 rounded-full border border-gray-300 text-lg focus:outline-none focus:bg-blue-50 focus:text-blue-700 focus:border-blue-500">
     <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
     <button type="submit" class="px-4 py-2 rounded-full bg-blue-400 text-white text-lg hover:bg-blue-500">Send</button>
 </form>

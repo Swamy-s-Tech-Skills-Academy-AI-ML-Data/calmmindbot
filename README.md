@@ -399,9 +399,12 @@ To deploy CalmMind to a production environment:
 
 ---
 
----
+## Notebooks Directory
 
----
+A `notebooks/` directory has been created to store Jupyter notebooks related to the project. These notebooks are used for tasks such as fine-tuning models, data exploration, and experimentation.
+
+### Current Notebooks
+- `calmmindbot.ipynb`: A notebook for fine-tuning the GPT model for the Calm Mind Bot project.
 
 ---
 

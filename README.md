@@ -124,10 +124,6 @@ python manage.py migrate
 Every winter I find myself getting sad because of the weather. How can I fight this?
 ```
 
-## UI First Look
-
-![UI First Look](./docs/images/UIFirstLook.PNG)
-
 ## Project Setup
 
 ```powershell
@@ -160,14 +156,6 @@ This project consists of two main phases:
 
 1. **AI Model Training** – Utilizing OpenAI’s API to equip the chatbot with intelligent, context-aware responses tailored to mental health concerns.
 2. **Django Integration** – Embedding the trained model into a secure, scalable Django web application for real-time user interactions.
-
-## **Key Features**
-
-✔️ AI-powered chatbot for mental health counseling  
-✔️ OpenAI-driven NLP for thoughtful, context-aware responses  
-✔️ Secure and scalable **Django framework**  
-✔️ User-friendly web interface (**HTML, CSS, JavaScript**)  
-✔️ Customizable chatbot behavior for personalized interactions
 
 ## **Project Description**
 
@@ -399,9 +387,13 @@ To deploy CalmMind to a production environment:
 
 ---
 
----
+## Notebooks Directory
 
----
+A `notebooks/` directory has been created to store Jupyter notebooks related to the project. These notebooks are used for tasks such as fine-tuning models, data exploration, and experimentation.
+
+### Current Notebooks
+
+- `calmmindbot.ipynb`: A notebook for fine-tuning the GPT model for the Calm Mind Bot project.
 
 ---
 

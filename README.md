@@ -30,17 +30,20 @@ A `Django-based AI chatbot` leveraging `OpenAI's NLP` to offer empathetic mental
 The project is organized into the following components:
 
 ### 1. Django Web Application (`src/`)
+
 - **Main Project:** `calmmind_portal_main`
 - **App:** `calmmind` - Contains views, templates, and URLs for the chatbot interface
 - **Templates:** Responsive UI with chat interface, navigation, and styling
 
 ### 2. Model Fine-tuning (`notebooks/`)
+
 - **`calmmindbot.ipynb`:** Jupyter notebook for fine-tuning the OpenAI GPT model
 - Processes mental health counseling datasets
 - Creates and submits fine-tuning jobs to OpenAI
 - Tests and validates the fine-tuned model
 
 ### 3. Training Data (`data/`)
+
 - **`train.jsonl`:** Training dataset in JSONL format
 - **`validation.jsonl`:** Validation dataset for model evaluation
 
@@ -64,9 +67,10 @@ pip install -r requirements.txt
 ```
 
 ### 2. Environment Variables
+
 Create a `.env` file in the root directory with:
 
-```
+```text
 OPENAI_API_KEY=your_openai_api_key
 ```
 
@@ -94,6 +98,7 @@ To fine-tune the OpenAI model:
 ## 📝 Sample Prompts
 
 Try asking the bot questions like:
+
 ```
 Every winter I find myself getting sad because of the weather. How can I fight this?
 I've been feeling anxious about my upcoming job interview. Any advice?
